@@ -2,7 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "./Button";
 import bagIcon from "../assets/bag.png";
-
+import pisaa from "../assets/pizzashop.png";
 export default function Header() {
   return (
     <Stack
@@ -15,15 +15,11 @@ export default function Header() {
         padding: { xs: "24px 16px 0 16px", md: "40px 20px 0 20px" },
       }}
     >
-      <Typography
-        sx={{
-          fontSize: { xs: "20px", md: "28px" },
-          fontWeight: 800,
-          color: "#FFFFFF",
-        }}
+      <Box component="img"
+      src={pisaa}
       >
-        pizzashop
-      </Typography>
+
+      </Box>
 
       <Stack
         direction="row"
